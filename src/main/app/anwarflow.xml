@@ -11,5 +11,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
         <http:listener config-ref="HTTP_Listener_Configuration" path="/AnwarFlow" doc:name="HTTP"/>
         <set-payload value="#[&quot;this is AnwarFlow&quot;]" doc:name="Set Payload"/>
         <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+<logger message="#[payload adding new payload]" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
